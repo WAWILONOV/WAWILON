@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Обеспечивает корректное поведение padding и border */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Плавный скролл */
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+/* Стили для навигации */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание */
+    background-color: rgba(132, 132, 132, 0.6);
+    z-index: 1000;
+    padding: 10px 20px; /* Увеличенные отступы */
+}
+
+/* Логотип */
+.logo {
+    margin-right: auto; /* Сдвигает логотип влево */
+    font-size: 2em; /* Размер шрифта логотипа */
+}
+
+/* Центрирование списка навигации */
+ul {
+    display: flex; /* Горизонтальное расположение */
+    gap: 20px; /* Установлено расстояние между пунктами навигации */
+    list-style: none;
+    font-size: 2em; /* Используем относительный размер */
+    padding: 0; /* Убираем внутренний отступ */
+    margin: 0; /* Убираем отступы */
+    position: relative; /* Позволяет использовать отрицательные значения */
+    right: 400px; /* Сдвиг влево */
+}
+
+li {
+    text-align: center; /* Центрируем текст внутри элементов */
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 35px; /* Внутренние отступы для улучшения кликабельности */
+    display: block; /* Делаем ссылку блочным элементом */
+    transition: background-color 0.3s, transform 0.3s; /* Плавные переходы */
+    border-radius: 50px;
+}
+
+a:hover {
+    background-color: rgba(132, 132, 132, 0.71);
+    color: rgb(44, 249, 109);
+}
+
+/* Общие стили для секций */
+.section {
+    height: 100vh; /* Высота каждой секции — на весь экран */
+    display: flex;
+    flex-direction: column; /* Вертикальная ориентация для адаптивности */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed; /* Параллакс-эффект */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Стили для кнопки "Связаться" */
+.button-container {
+    position: fixed; /* Фиксированное положение */
+    bottom: 20px; /* Отступ от нижнего края */
+    right: 20px; /* Отступ от правого края */
+    z-index: 1000; /* Поверх других элементов */
+}
+
+.contact {
+    background-color: rgba(193, 193, 193, 0.7);
+    font-size: 20px;
+    color: white;
+    border: none; /* Убираем рамку */
+    border-radius: 30px;
+    padding: 15px 30px; /* Увеличенные отступы для кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, transform 0.3s; /* Плавные переходы */
+}
+
+.contact:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Фоновое изображение для секций */
+.main-section {
+    background-image: url('https://images4.alphacoders.com/102/thumb-1920-1029255.jpg');
+}
+
+.about-section {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/planeta_koltso_fioletovyj_149425_3840x2160.jpg');
+}
+
+.other-section {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/planeta_koltso_fioletovyj_149425_3840x2160.jpg');
+}
+
+.contact-section {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/putnik_planeta_kosmos_167131_3840x2160.jpg');
+}
+
+/* Стили для текста */
+.baner {
+}
+
+.baner2 {
+}
+
+.m {
+}
